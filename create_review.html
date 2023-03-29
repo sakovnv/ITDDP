@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/iconsfont.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/create-review-section.css">
+        <title>Главная - Сервис рецензий</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="">
+                    <div class="upper-header container">
+                        <h1 class="upper-header__name">Сервис рецензий</h1>
+                        <div class="upper-header__authorization">
+                            <a href="#" class="upper-header__register-link">Регистрация <i class="fa-solid fa-key upper-header__register-icon"></i></a>   
+                            <a href="profile.html" class="upper-header__login-link">Войти <i class="fa-solid fa-right-to-bracket upper-header__login-icon"></i></a>
+                        </div>
+                        <div class="menu-lines">
+                            <span class="menu-lines__upper-item menu-lines__item"></span>
+                            <span class="menu-lines__middle-item menu-lines__item"></span>
+                            <span class="menu-lines__lower-item menu-lines__item"></span>
+                          </div>  
+                    </div>
+                    <div class="lower-header">
+                        <div class="lower-header__container container">
+                            <nav class="lower-header__navigation">
+                                <ul class="lower-header__navigation-list">
+                                    <li><a href="index.html" class="lower-header__navigation-link">Главная</a></li>
+                                    <li><a href="reviews_list.html" class="lower-header__navigation-link lower-header__navigation-link_active">Рецензии</a></li>
+                                    <li><a href="archive_list.html" class="lower-header__navigation-link">Архив</a></li>
+                                </ul>
+                            </nav>
+                            <form class="lower-header__search-form">
+                                <input type="search" class="lower-header__search-input">
+                                <i class="fa-solid fa-magnifying-glass lower-header__search-icon"></i>
+                            </form>
+                        </div>    
+                    </div>
+                </div>
+            </header>
+            <main class="container">
+                <div class="create-review">
+                    <h1 class="create-review__header">Создание рецензии</h1>
+                    <form class="create-review__form" action="" method="post" enctype="multipart/form-data">
+                        <label class="form-label" for="review-header">Заголовок:</label>
+                        <input class="form-input" type="text" id="review-header" placeholder="Введите заголовок">
+                        <label class="form-label" for="review-category">Категория:</label>
+                        <select class="form-input" id="review-category">
+                            <option value="choose">Выберите категорию</option>
+                            <option value="books">Книги</option>
+                            <option value="films">Фильмы</option>
+                            <option value="games">Игры</option>
+                            <option value="cars">Автомобили</option>
+                        </select>
+                        <label class="form-label" for="review-text">Текст:</label>
+                        <textarea class="form-input" id="review-text" rows="10" placeholder="Напишите ваш отзыв"></textarea>
+                        <label class="input-file">
+                            <input type="file" name="file" accept="image/png, image/jpeg">
+                            <span class="input-file-btn">Выберите файл</span>           
+                            <span class="input-file-text">Максимум 1мб</span>
+                        </label>
+                        <div class="submit-wrapper">
+                            <input class="form-input-submit" type="submit" value="Опубликовать">
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </body>
+</html>

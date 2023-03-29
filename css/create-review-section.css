@@ -1,0 +1,64 @@
+.create-review {
+    margin-top: 40px;
+}
+
+.create-review * {
+    font-family: 'Comfortaa';
+}
+
+
+.create-review__header {
+    margin-left: 60px;
+    font-size: 3rem;
+}
+
+.create-review__form {
+    margin: 0 80px;
+    padding: 20px;
+}
+
+.form-label {
+    margin-left: 15px;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.form-input {
+    display: block;
+    outline: none;
+    border: 2px solid var(--form-input-border-color);
+    resize: none;
+    width: 100%;
+    padding: 17px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: var(--form-input-text-color);
+    font-size: 1.2rem;
+}
+
+.submit-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.form-input-submit {
+    width: 80%;
+    font-size: 1.8rem;
+    color:white;
+    padding: 12px;
+    border-radius: 15px;
+    background: radial-gradient(45.78% 32.5% at 50% 50%, #404F75 0%, #333D55 100%);
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .create-review__form {
+        margin: 0;
+    }
+
+    .create-review__header {
+        margin-left: 10px;
+    }
+    
+}

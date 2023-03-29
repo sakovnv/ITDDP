@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/iconsfont.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/categories-section.css">
+        <link rel="stylesheet" href="css/review-section.css">
+        <title>Главная - Сервис рецензий</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="">
+                    <div class="upper-header container">
+                        <h1 class="upper-header__name">Сервис рецензий</h1>
+                        <div class="upper-header__authorization">
+                            <a href="#" class="upper-header__register-link">Регистрация <i class="fa-solid fa-key upper-header__register-icon"></i></a>   
+                            <a href="profile.html" class="upper-header__login-link">Войти <i class="fa-solid fa-right-to-bracket upper-header__login-icon"></i></a>
+                        </div>
+                        <div class="menu-lines">
+                            <span class="menu-lines__upper-item menu-lines__item"></span>
+                            <span class="menu-lines__middle-item menu-lines__item"></span>
+                            <span class="menu-lines__lower-item menu-lines__item"></span>
+                          </div>  
+                    </div>
+                    <div class="lower-header">
+                        <div class="lower-header__container container">
+                            <nav class="lower-header__navigation">
+                                <ul class="lower-header__navigation-list">
+                                    <li><a href="index.html" class="lower-header__navigation-link">Главная</a></li>
+                                    <li><a href="reviews_list.html" class="lower-header__navigation-link lower-header__navigation-link_active">Рецензии</a></li>
+                                    <li><a href="archive_list.html" class="lower-header__navigation-link">Архив</a></li>
+                                </ul>
+                            </nav>
+                            <form class="lower-header__search-form">
+                                <input type="search" class="lower-header__search-input">
+                                <i class="fa-solid fa-magnifying-glass lower-header__search-icon"></i>
+                            </form>
+                        </div>    
+                    </div>
+                </div>
+            </header>
+            <main class="container">
+                <div class="content category-reviews-content">
+                    <div class="category-list">
+                        <a href="#" class="category-list__item category-list__item_active">
+                            <img src="img/category_all.png" alt="">
+                            <span>All</span>
+                        </a>
+                        <a href="#" class="category-list__item">
+                            <img src="img/category_books.png" alt="">
+                            <span>Books</span>
+                        </a>
+                        <a href="#" class="category-list__item">
+                            <img src="img/category_films.png" alt="">
+                            <span>Films</span>
+                        </a>
+                        <a href="#" class="category-list__item">
+                            <img src="img/category_games.png" alt="">
+                            <span>Games</span>
+                        </a>
+                        <a href="#" class="category-list__item">
+                            <img src="img/category_cars.png" alt="">
+                            <span>Cars</span>
+                        </a>
+                    </div>
+                    <div class="content-body">
+                        <article class="content-body__review">
+                            <div class="content-body__review-header">
+                                <img src="img/LanaDelRey.jpg" height="250" alt="">
+                                <div class="content-body__review-header-info">
+                                    <h2><b>Заголовок рецензии</b></h2>
+                                    <span class="content-body__review_category"><b>Категория:</b> Музыка</span>
+                                    <div class="content-body__review-lower">
+                                        <span><b>Рейтинг: 4.0</b></span>
+                                        <div class="content-body__author">
+                                            <img src="img/user.png" height="50" alt="">
+                                            <span class="content-body__author-name">sakovnv</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-body__review-description">
+                                <span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+                                    from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
+                                    looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of
+                                    the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 
+                                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on
+                                    the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                                    comes from a line in section 1.10.32.
+                                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33
+                                        from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions
+                                        from the 1914 translation by H. Rackham.</span>
+                            </div>
+                            <footer class="content-body__review-footer">
+                                <div class="content-body__review-datetime">
+                                    <span class="content-body__creation-time"><b>Создано: </b>01.01.1990 12:35</span>
+                                    <span class="content-body__edit-time"><b>Редактировано: </b>15:31</span>
+                                </div>
+                                <div class="content-body__review-rating rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </main>
+        </body>
+</html>

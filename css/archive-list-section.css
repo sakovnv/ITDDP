@@ -1,0 +1,19 @@
+.reviews-list__header {
+    margin-left: 50px;
+}
+
+.reviews-list__header > h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .review-item__lower {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .review-item__rating {
+        margin: 0;
+    }
+}
